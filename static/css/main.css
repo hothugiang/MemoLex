@@ -1312,34 +1312,6 @@ input[type="checkbox"] {
   border-color: #F76C6C;
 }
 
-#review-list {
-  margin-left: 10px;
-  border-radius: 5px;
-  font-size: 20px;
-  background-color: #A8D0E6;
-  border-color: #A8D0E6;
-}
-
-#review-list:hover {
-  background-color: #F76C6C;
-  color: white;
-  border-color: #F76C6C;
-}
-
-#delete-list {
-  margin-left: 10px;
-  border-radius: 5px;
-  font-size: 20px;
-  background-color: #A8D0E6;
-  border-color: #A8D0E6;
-}
-
-#delete-list:hover {
-  background-color: #F76C6C;
-  color: white;
-  border-color: #F76C6C;
-}
-
 
 #create-list {
   margin-left: 10px;
@@ -1898,6 +1870,44 @@ input[type="checkbox"] {
 .radio-button-container:hover {
   scale: 1.05;
   color: #374785;
+}
+
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  width: 35%;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+
+.bi-three-dots-vertical {
+  opacity: 60%;
+}
+
+.taskbar #delete-list,
+.taskbar #review-list,
+.taskbar #create-new-list {
+  margin-right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.taskbar #delete-list:hover,
+.taskbar #review-list:hover,
+.taskbar #create-new-list:hover {
+  scale: 1.2 !important;
+  color: var(--color-default)
 }
 
 
